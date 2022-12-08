@@ -1,1 +1,3 @@
 # rsschool-cv
+
+# init commit
