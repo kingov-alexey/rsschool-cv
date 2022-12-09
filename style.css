@@ -11,6 +11,7 @@ body {
     padding: 20px;
     background: rgb(238, 136, 3);
     color: white;
+    border-radius: 50px;
 }
 
 .header {
@@ -24,4 +25,8 @@ body {
 .avatar {
     display: flex;
     justify-content: center;
+}
+
+.avatar img {
+    border-radius: 50px;
 }
