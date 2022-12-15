@@ -21,7 +21,16 @@
 .hidden-menu .menu-item a {
     color: white;
     text-shadow: red 1px 3px;
-    list-style-type: none;
+
+
+    text-decoration: none;
+    transition: color 0.5s;
+
+}
+
+.hidden-menu .menu-item a:hover {
+    color: red;
+
 }
 
 .hidden-menu-ticker {
