@@ -5,73 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Alexey Korolyov</title>
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="preload" href="./assets/fonts/ZenDots-Regular.ttf" as="font">
 </head>
 
-
 <body>
+    <div class="spinner"></div>
     <div class="wrap">
-        <header>
-            <div class="header">
-                <h1>Korolyov Alexey</h1>
+
+        <header class="header">
+            <div class="menu-icon">
+                <a href="#menu">
+                    <img src="./assets/img/menu.png" alt="menu">
+                </a>
             </div>
+
+            <div class="header-content">
+                <h1>Korolyov Alexey</h1>
+                <span>developer</span>
+            </div>
+
         </header>
-        <main>
-            <div class="main">
-                <div class="container1">
+
+        <!-- <nav class="nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                    <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                </ul>
+            </div>
+        </nav> -->
+
+        <main class="main">
+            <div class="container">
+                <div class="card-profile">
                     <div class="avatar">
-                        <img src="https://avatars.githubusercontent.com/u/67068410?v=4" alt="avatar">
+                        <img src="./assets/img/avatar.jpg" alt="avatar">
                     </div>
                 </div>
-                <!-- <div class="container">
-                container2
-
+            </div>
+            <!-- <div class="container">
+                <div class="card-summary">
+                    <h2>summary</h2>
+                    <p>My goal is to learn how to write applications for mobile phones as well as modern web
+                        applications. The selected range of tools will allow me to realize my goal.</p>
+                </div>
             </div>
             <div class="container">
-                container3
-
-            </div> -->
-
-                <nav>
-                    <div class="menu">
-                        <ul>
-                            <li>
-                                <a href="#about">about me</a>
-                            </li>
-                            <li>
-                                <a href="#about">about me</a>
-                            </li>
-                            <li>
-                                <a href="#about">about me</a>
-                            </li>
-                            <li>
-                                <a href="#about">about me</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </nav>
+                <div class="card-contacts">
+                    <h2>Contacts</h2>
+                    <ul class="">
+                        <li class="">gitHub</li>
+                        <li class="">teleg</li>
+                        <li class="">mail</li>
+                    </ul>
+                </div>
             </div>
+            <div class="container">
+                <div class="card-skills">
+                    <h2>skills</h2>
+                    <ul class="">
+                        <li class="">gitHub</li>
+                        <li class="">HTML</li>
+                        <li class="">CSS</li>
+                    </ul>
+                </div>
+            </div> -->
         </main>
 
-        <footer>
-            <div class="footer">
 
-                <div>
-                    <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
-                    &copy; 2022
-                    <a href="https://rs.school/js/">
-                        <img src="https://rs.school/images/rs_school_js.svg" alt="logo course">
-                    </a>
-                </div>
-                <div>
-
-                </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
+                &copy; 2022
+                <a href="https://rs.school/js/">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="logo course">
+                </a>
             </div>
-
         </footer>
     </div>
+
 </body>
 
 </html>
