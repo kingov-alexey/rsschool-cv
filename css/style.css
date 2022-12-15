@@ -32,23 +32,6 @@ body {
     align-items: center;
 }
 
-.header .menu-icon {
-    position: absolute;
-    right: 10px;
-    transition: .3s;
-}
-
-.header .menu-icon:hover {
-    cursor: copy;
-    background-color: red;
-    border-radius: 5px;
-}
-
-.header .menu-icon a img {
-    width: 30px;
-    height: 30px;
-}
-
 .header .header-content {
     display: flex;
     flex-direction: column;
@@ -61,27 +44,6 @@ body {
 
 .header .header-content h1 {
     font-size: 26px;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-}
-
-.nav-link {
-    padding: 0 20px;
-    line-height: 50px;
-    transition: .3s;
-    text-decoration: none;
-
-}
-
-.nav-link :hover {
-    color: red;
-    background-color: aqua;
-
 }
 
 .main {
@@ -165,63 +127,6 @@ body {
         opacity: 1;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-.spinner {
-    width: 40px;
-    height: 40px;
-    margin: 100px auto;
-    background-color: #333;
-
-    border-radius: 100%;
-    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-    animation: sk-scaleout 1.0s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-scaleout {
-    0% {
-        -webkit-transform: scale(0)
-    }
-
-    100% {
-        -webkit-transform: scale(1.0);
-        opacity: 0;
-    }
-}
-
-@keyframes sk-scaleout {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-
-    100% {
-        -webkit-transform: scale(1.0);
-        transform: scale(1.0);
-        opacity: 0;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* можно испльзовать следующие элементы */
