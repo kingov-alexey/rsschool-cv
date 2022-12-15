@@ -5,73 +5,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link rel="preload" href="./assets/fonts/ZenDots-Regular.ttf" as="font">
     <title>Alexey Korolyov</title>
 </head>
 
-
 <body>
+
     <div class="wrap">
-        <header>
-            <div class="header">
-                <h1>Korolyov Alexey</h1>
+
+        <header class="header">
+            <div class="header-content">
+                <div>Korolyov Alexey</div>
+                <div>developer</div>
             </div>
         </header>
-        <main>
-            <div class="main">
-                <div class="container1">
-                    <div class="avatar">
-                        <img src="https://avatars.githubusercontent.com/u/67068410?v=4" alt="avatar">
-                    </div>
+
+
+        <nav>
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+            <label class="btn-menu" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <ul class="hidden-menu">
+                <li class="menu-item"><a href="#profile" class="nav-link">Profile</a></li>
+                <li class="menu-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="menu-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="menu-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="menu-item"><a href="#code" class="nav-link">Code</a></li>
+                <li class="menu-item"><a href="#courses" class="nav-link">Courses</a></li>
+                <li class="menu-item"><a href="#Projects" class="nav-link">Projects</a></li>
+                <li class="menu-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="menu-item"><a href="#languages" class="nav-link">languages</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+
+            <section class="section" id="profile">
+                <h1>Korolyov Alexey</h1>
+                <div class="avatar">
+                    <img src="./assets/img/avatar.jpg" alt="avatar">
                 </div>
-                <!-- <div class="container">
-                container2
+                <div>developer</div>
+            </section>
 
-            </div>
-            <div class="container">
-                container3
+            <!-- <section class="section" id="contacts">
+                <h2>Contacts</h2>
+                <ul class="">
+                    <li class="">GitHub:
+                        <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
+                    </li>
+                    <li class="">Telegram:
+                        <a href="https://web.telegram.org/kingov-alexey" target="_blank">@kingov_alexey</a>
+                    </li>
+                    <li class="">Email:
+                        <a href="mailto:kingov_alexey@mail.ru">kingov_alexey@mail.ru</a>
+                    </li>
+                </ul>
+            </section> -->
 
-            </div> -->
+            <!-- <section class="section" id="summary">
+                <h2>Summary</h2>
+                <p>My goal is to learn how to write applications for mobile phones as well as modern web
+                    applications. The selected range of tools will allow me to realize my goal.</p>
+            </section> -->
 
-                <nav>
-                    <div class="menu">
-                        <ul>
-                            <li>
-                                <a href="#about">about me</a>
-                            </li>
-                            <li>
-                                <a href="#about">about me</a>
-                            </li>
-                            <li>
-                                <a href="#about">about me</a>
-                            </li>
-                            <li>
-                                <a href="#about">about me</a>
-                            </li>
-                        </ul>
+            <!-- <section class="section" id="skills">
+                <h2>skills</h2>
+                <ul class="">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>React</li>
+                    <li>ReactNative</li>
+                    <li>Nodejs</li>
+                    <li>Git</li>
+                    <li>VSC</li>
+                </ul>
+            </section> -->
 
-                    </div>
-                </nav>
-            </div>
+            <!-- <section class="section" id="code">
+                <h2>Code</h2>
+                <pre>
+                    <code>
+                        const userRequest = 'Are you reading this code?';
+                        let testReadTextCode = (arg) => {
+                            let userResponse = confirm(arg);
+                            return alert(userResponse ? 'you are attentive' : 'you are not careful');
+                        }
+                        testReadTextCode(userRequest);
+                    </code> 
+                </pre>
+            </section> -->
+
+            <!-- <section class="section" id="courses">
+                <h2>courses</h2>
+                <p>
+                    this should be table with my courses
+                </p>
+            </section> -->
+
+            <!-- <section class="section" id="projects">
+                <h2>projects</h2>
+                <p>
+                    this should be table with my projects
+                </p>
+            </section> -->
+
+            <!-- <section class="section" id="education">
+                <h2>education</h2>
+                <p>
+                    this should be table with my education
+                </p>
+            </section> -->
+
+            <!-- <section class="section" id="languages">
+                <h2>languages</h2>
+                <p>
+                    this should be table with my languages append native russian
+                </p>
+            </section> -->
         </main>
 
-        <footer>
-            <div class="footer">
 
-                <div>
-                    <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
-                    &copy; 2022
-                    <a href="https://rs.school/js/">
-                        <img src="https://rs.school/images/rs_school_js.svg" alt="logo course">
-                    </a>
-                </div>
-                <div>
-
-                </div>
+        <footer class="footer">
+            <div class="container">
+                <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
+                &copy; 2022
+                <a href="https://rs.school/js/">
+                    <img src="https://rs.school/images/rs_school_js.svg" alt="logo course">
+                </a>
             </div>
-
         </footer>
     </div>
+
+    <div class="preloader">
+        <div class="spinner"></div>
+
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            /* Страница загружена, включая все ресурсы */
+            const preloader = document.querySelector('.preloader') /* находим блок Preloader */
+            preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
+        })
+    </script>
+
 </body>
 
 </html>
