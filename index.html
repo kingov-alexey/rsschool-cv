@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/spinner.css">
+
+
     <link rel="icon" href="./assets/img/favicon.ico">
     <link rel="preload" href="./assets/fonts/ZenDots-Regular.ttf" as="font">
     <title>Alexey Korolyov</title>
+
 </head>
 
 <body>
@@ -42,12 +45,10 @@
             </nav>
         </header>
 
-
-
         <main class="main">
 
             <section class="section" id="profile">
-                <div class="test">
+                <div>
 
 
                     <div class="avatar">
@@ -81,6 +82,7 @@
                 <p>My goal is to learn how to write applications for mobile phones as well as modern web
                     applications. The selected range of tools will allow me to realize my goal.</p>
             </section> -->
+
             <!-- 
             <section class="section" id="skills">
                 <h2>skills</h2>
@@ -142,28 +144,42 @@
 
         <footer class="footer">
             <div class="container">
-                <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
-                &copy; 2022
-                <a href="https://rs.school/js/">
-                    <img src="https://rs.school/images/rs_school_js.svg" alt="logo course">
-                </a>
+                <div class="item">
+                    <a href="https://rs.school/js/">
+                        <img src="./assets/svg/rs_school_js.svg" alt="logo course">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
+                </div>
+                <div class="item">
+                    &copy; 2022
+                </div>
             </div>
         </footer>
+
     </div>
+
+
+
 
     <div class="preloader">
         <div class="spinner"></div>
 
     </div>
 
+
     <script>
         window.addEventListener('load', () => {
-            /* Страница загружена, включая все ресурсы */
-            const preloader = document.querySelector('.preloader') /* находим блок Preloader */
-            preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
+            const preloader = document.querySelector('.preloader')
+            preloader.classList.add('preloader_hidden')
         })
     </script>
 
 </body>
+
+
+
+
 
 </html>
