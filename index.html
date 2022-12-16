@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/spinner.css">
+
+
     <link rel="icon" href="./assets/img/favicon.ico">
     <link rel="preload" href="./assets/fonts/ZenDots-Regular.ttf" as="font">
     <title>Alexey Korolyov</title>
+
 </head>
 
 <body>
@@ -18,41 +21,45 @@
     <div class="wrap">
 
         <header class="header">
-            <div class="header-content">
-                <div>Korolyov Alexey</div>
-                <div>developer</div>
-            </div>
+            <h1>Korolyov Alexey</h1>
+            <nav class="nav">
+                <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+                <label class="btn-menu" for="hmt">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </label>
+                <ul class="hidden-menu">
+                    <div class="blur">
+                        <li class="menu-item"><a href="#profile" class="nav-link">Profile</a></li>
+                        <li class="menu-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="menu-item"><a href="#summary" class="nav-link">Summary</a></li>
+                        <li class="menu-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="menu-item"><a href="#code" class="nav-link">Code</a></li>
+                        <li class="menu-item"><a href="#courses" class="nav-link">Courses</a></li>
+                        <li class="menu-item"><a href="#Projects" class="nav-link">Projects</a></li>
+                        <li class="menu-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="menu-item"><a href="#languages" class="nav-link">languages</a></li>
+                    </div>
+                </ul>
+            </nav>
         </header>
-
-
-        <nav>
-            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
-            <label class="btn-menu" for="hmt">
-                <span class="first"></span>
-                <span class="second"></span>
-                <span class="third"></span>
-            </label>
-            <ul class="hidden-menu">
-                <li class="menu-item"><a href="#profile" class="nav-link">Profile</a></li>
-                <li class="menu-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li class="menu-item"><a href="#summary" class="nav-link">Summary</a></li>
-                <li class="menu-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="menu-item"><a href="#code" class="nav-link">Code</a></li>
-                <li class="menu-item"><a href="#courses" class="nav-link">Courses</a></li>
-                <li class="menu-item"><a href="#Projects" class="nav-link">Projects</a></li>
-                <li class="menu-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="menu-item"><a href="#languages" class="nav-link">languages</a></li>
-            </ul>
-        </nav>
 
         <main class="main">
 
             <section class="section" id="profile">
-                <h1>Korolyov Alexey</h1>
-                <div class="avatar">
-                    <img src="./assets/img/avatar.jpg" alt="avatar">
+                <div>
+
+
+                    <div class="avatar">
+                        <img src="./assets/img/avatar.jpg" alt="avatar">
+                    </div>
+
+                    <div class="profession">
+                        developer
+                    </div>
                 </div>
-                <div>developer</div>
+
             </section>
 
             <!-- <section class="section" id="contacts">
@@ -76,7 +83,8 @@
                     applications. The selected range of tools will allow me to realize my goal.</p>
             </section> -->
 
-            <!-- <section class="section" id="skills">
+            <!-- 
+            <section class="section" id="skills">
                 <h2>skills</h2>
                 <ul class="">
                     <li>HTML</li>
@@ -136,28 +144,42 @@
 
         <footer class="footer">
             <div class="container">
-                <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
-                &copy; 2022
-                <a href="https://rs.school/js/">
-                    <img src="https://rs.school/images/rs_school_js.svg" alt="logo course">
-                </a>
+                <div class="item">
+                    <a href="https://rs.school/js/">
+                        <img src="./assets/svg/rs_school_js.svg" alt="logo course">
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
+                </div>
+                <div class="item">
+                    &copy; 2022
+                </div>
             </div>
         </footer>
+
     </div>
+
+
+
 
     <div class="preloader">
         <div class="spinner"></div>
 
     </div>
 
+
     <script>
         window.addEventListener('load', () => {
-            /* Страница загружена, включая все ресурсы */
-            const preloader = document.querySelector('.preloader') /* находим блок Preloader */
-            preloader.classList.add('preloader_hidden') /* добавляем ему класс для скрытия */
+            const preloader = document.querySelector('.preloader')
+            preloader.classList.add('preloader_hidden')
         })
     </script>
 
 </body>
+
+
+
+
 
 </html>

@@ -7,7 +7,7 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #000000;
+    background-color: #160000;
     font-family: "ZenDots-Regular";
     display: flex;
     flex-direction: column;
@@ -21,8 +21,6 @@ body {
     background-image: url("../assets/img/bg.jpg");
     background-position: center center;
     background-size: cover;
-    animation-name: Appearance;
-    animation-duration: 3s;
 }
 
 .header {
@@ -32,23 +30,23 @@ body {
     align-items: center;
 }
 
-.header .header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.header h1 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
     color: white;
-    size: 10px;
     text-shadow: red 1px 3px;
+    text-align: center;
+    transition: 0.5s;
+    padding-top: 40px;
 }
 
-.header .header-content h1 {
-    font-size: 26px;
+.header :hover {
+    letter-spacing: 10px;
+    color: aqua;
 }
 
 .main {
-    /* border: 3px dotted; */
-    /* background: rgba(25, 199, 104, 0.5); */
     color: antiquewhite;
     display: flex;
     justify-content: center;
@@ -56,82 +54,92 @@ body {
     flex: 1 1 auto;
 }
 
-.nav {
-    border: 3px dotted;
-    background: rgba(224, 233, 228, 0.801);
-    color: antiquewhite;
+
+.section {
+    width: 400px;
+    padding-top: 40px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    size: 10px;
+    text-shadow: red 1px 3px;
+}
+
+#profile .avatar img {
+    border: 3px solid;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 5px rgb(54, 219, 248);
+}
+
+#profile .avatar :hover {
+    height: 300px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 10px rgb(54, 219, 248);
+}
+
+#profile .profession {
+    transition: 0.7s;
+    padding: 10px;
+}
+
+#profile :hover {
+    letter-spacing: 10px;
+    color: aqua;
+    cursor: pointer;
 }
 
 .footer {
-    border: 3px dotted;
-    background: rgba(163, 29, 29, 0.5);
-    color: antiquewhite;
     display: flex;
     flex: 0 0 auto;
+    flex-direction: row;
+    color: white;
+    padding: 10px;
 }
 
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: aqua;
+}
 
 .footer img {
-    /* display: flex; */
     flex-direction: row;
-    height: 30px;
+    height: 50px;
+    text-shadow: rgb(47, 208, 219) 1px 3px;
+    text-shadow: red 1px 3px;
+    background-color: rgba(255, 255, 255);
+    backdrop-filter: blur(3px);
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
 }
 
-.avatar img {
-    height: 300px;
-    border-radius: 50%;
-    position: relative;
+.footer .container .item img:hover {
+
+    background-color: aqua;
 }
 
 @font-face {
     font-family: ZenDots-Regular;
     src: url("../assets/fonts/ZenDots-Regular.ttf");
 }
-
-@-webkit-keyframes Appearance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes Appearance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes Appearance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes Appearance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-/* можно испльзовать следующие элементы */
-/* filter: blur(5px); */
-/* прозрачность цвета */
-/* background: rgba(25, 199, 104, 0.5); */
-/* появление изчезновение */
-/* transition: background-image 3s ease-in; */
