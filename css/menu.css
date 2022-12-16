@@ -3,34 +3,36 @@
     position: fixed;
     list-style: none;
     padding: 20px;
+    padding-top: 70px;
     margin: 0;
     box-sizing: border-box;
-    width: 200px;
-    /* background-color: #eee; */
-    /* background: rgba(163, 29, 29, 0.5); */
-    /* height: 100%; */
+    width: 250px;
     top: 0;
-    left: -200px;
-    transition: left .2s;
+    right: -250px;
+    transition: right .8s;
     z-index: 2;
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
+}
+
+.hidden-menu .blur {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    /* width: 100%; */
 
 }
 
 .hidden-menu .menu-item a {
     color: white;
     text-shadow: red 1px 3px;
-
-
     text-decoration: none;
     transition: color 0.5s;
-
+    letter-spacing: 0;
 }
 
 .hidden-menu .menu-item a:hover {
-    color: red;
-
+    text-shadow: rgb(47, 208, 219) 1px 3px;
+    font-size: 30px;
 }
 
 .hidden-menu-ticker {
@@ -39,11 +41,11 @@
 
 .btn-menu {
     color: #fff;
-    background-color: rgb(243, 9, 9);
+    /* background-color: rgb(243, 9, 9); */
     padding: 5px;
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
     cursor: pointer;
     transition: left .23s;
     z-index: 3;
@@ -61,16 +63,17 @@
     position: relative;
 }
 
+
 .btn-menu span.first {
     margin-top: 0;
 }
 
 .hidden-menu-ticker:checked~.btn-menu {
-    left: 160px;
+    /* left: 160px; */
 }
 
 .hidden-menu-ticker:checked~.hidden-menu {
-    left: 0;
+    right: 0;
 }
 
 .hidden-menu-ticker:checked~.btn-menu span.first {

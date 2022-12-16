@@ -7,7 +7,7 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #000000;
+    background-color: #160000;
     font-family: "ZenDots-Regular";
     display: flex;
     flex-direction: column;
@@ -21,8 +21,6 @@ body {
     background-image: url("../assets/img/bg.jpg");
     background-position: center center;
     background-size: cover;
-    animation-name: Appearance;
-    animation-duration: 3s;
 }
 
 .header {
@@ -32,18 +30,19 @@ body {
     align-items: center;
 }
 
-.header .header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
     color: white;
-    size: 10px;
     text-shadow: red 1px 3px;
+    text-align: center;
+    transition: 0.5s;
 }
 
-.header .header-content h1 {
-    font-size: 26px;
+.header :hover {
+    letter-spacing: 10px;
+    color: aqua;
 }
 
 .main {
@@ -56,11 +55,49 @@ body {
     flex: 1 1 auto;
 }
 
-.nav {
-    border: 3px dotted;
-    background: rgba(224, 233, 228, 0.801);
-    color: antiquewhite;
+
+.section {
+    width: 400px;
 }
+
+#profile {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    size: 10px;
+    text-shadow: red 1px 3px;
+}
+
+#profile .avatar img {
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s;
+}
+
+#profile .avatar :hover {
+    height: 300px;
+}
+
+#profile .profession {
+    transition: 0.5s;
+}
+
+#profile :hover {
+    letter-spacing: 10px;
+    color: aqua;
+}
+
+#profile .test .profession:hover {
+    letter-spacing: 10px;
+    color: aqua;
+}
+
+
+
 
 .footer {
     border: 3px dotted;
@@ -77,57 +114,13 @@ body {
     height: 30px;
 }
 
-.avatar img {
-    height: 300px;
-    border-radius: 50%;
-    position: relative;
-}
+
+
 
 @font-face {
     font-family: ZenDots-Regular;
     src: url("../assets/fonts/ZenDots-Regular.ttf");
 }
-
-@-webkit-keyframes Appearance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes Appearance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes Appearance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes Appearance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 
 /* можно испльзовать следующие элементы */
 /* filter: blur(5px); */
