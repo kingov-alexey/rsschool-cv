@@ -21,7 +21,7 @@
     <div class="wrap">
 
         <header class="header">
-            <h1>Korolyov Alexey</h1>
+            <div>Korolyov Alexey</div>
             <nav class="nav">
                 <input type="checkbox" id="hmt" class="hidden-menu-ticker">
                 <label class="btn-menu" for="hmt">
@@ -67,6 +67,7 @@
 
                 <section class="section" id="profile">
                     <div>
+
                         <div class="avatar">
                             <img src="./assets/img/avatar.jpg" alt="avatar">
                         </div>
@@ -74,22 +75,22 @@
                         <div class="profession">
                             developer
                         </div>
+                        <h1>Korolyov Alexey</h1>
                     </div>
                 </section>
 
                 <section class="section" id="contacts">
-                    <h2>Contacts</h2>
-                    <ul class="">
-                        <li class="">GitHub:
-                            <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
-                        </li>
-                        <li class="">Telegram:
-                            <a href="https://web.telegram.org/kingov-alexey" target="_blank">@kingov_alexey</a>
-                        </li>
-                        <li class="">Email:
-                            <a href="mailto:kingov_alexey@mail.ru">kingov_alexey@mail.ru</a>
-                        </li>
-                    </ul>
+                    <div class="box">
+                        <h2>Contacts</h2>
+                        <ul class="list">
+                            <li class="item">GitHub
+                                <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
+                            </li>
+                            <li class="item">Email:
+                                <a href="mailto:kingov_alexey@mail.ru">kingov_alexey@mail.ru</a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
 
                 <section class="section" id="summary">
@@ -110,6 +111,7 @@
                         <li>Nodejs</li>
                         <li>Git</li>
                         <li>VSC</li>
+                        <li>Figma</li>
                     </ul>
                 </section>
 
@@ -120,143 +122,48 @@
 const userRequest = 'Are you reading this code?';
 let testReadTextCode = (arg) => {
     let userResponse = confirm(arg);
-    return alert(userResponse ? 'you are attentive' : 'you are not careful');
+    return userResponse;
     }
-testReadTextCode(userRequest);
                         </code> 
                     </pre>
                 </section>
 
                 <section class="section" id="courses">
-                    <h2>courses</h2>
+                    <h2>Courses</h2>
                     <p>
-                        this should be table with my courses
+                        <a href="https://rs.school/js/">JS course from rs.school</a>
                     </p>
                 </section>
 
                 <section class="section" id="projects">
-                    <h2>projects</h2>
+                    <h2>Projects</h2>
                     <p>
-                        this should be table with my projects
+                        <a href="https://kingov-alexey.github.io/rsschool-cv/cv" target="_blank">CV - markdown</a>
+                    </p>
+                    <p>
+                        <a href="https://kingov-alexey.github.io/rsschool-cv/" target="_blank">CV - html, css, js</a>
                     </p>
                 </section>
 
                 <section class="section" id="education">
-                    <h2>education</h2>
+                    <h2>Education</h2>
                     <p>
-                        this should be table with my education
+                        Higher education.
                     </p>
                 </section>
 
                 <section class="section" id="languages">
-                    <h2>languages</h2>
+                    <h2>Languages</h2>
                     <p>
-                        this should be table with my languages append native russian
+                        Russian: С2
+                    </p>
+                    <p>
+                        English: А2
                     </p>
                 </section>
 
 
             </div>
-
-
-
-
-
-            <!-- <div class="slider">
-
-                <section class="section" id="profile">
-                    <div>
-                        <div class="avatar">
-                            <img src="./assets/img/avatar.jpg" alt="avatar">
-                        </div>
-
-                        <div class="profession">
-                            developer
-                        </div>
-                    </div>
-                </section>
-
-                <section class="section" id="contacts">
-                    <h2>Contacts</h2>
-                    <ul class="">
-                        <li class="">GitHub:
-                            <a href="https://github.com/kingov-alexey" target="_blank">@kingov-alexey</a>
-                        </li>
-                        <li class="">Telegram:
-                            <a href="https://web.telegram.org/kingov-alexey" target="_blank">@kingov_alexey</a>
-                        </li>
-                        <li class="">Email:
-                            <a href="mailto:kingov_alexey@mail.ru">kingov_alexey@mail.ru</a>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="section" id="summary">
-                    <h2>Summary</h2>
-                    <p>My goal is to learn how to write applications for mobile phones as well as modern web
-                        applications. The selected range of tools will allow me to realize my goal.</p>
-                </section>
-
-
-                <section class="section" id="skills">
-                    <h2>skills</h2>
-                    <ul class="">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>React</li>
-                        <li>ReactNative</li>
-                        <li>Nodejs</li>
-                        <li>Git</li>
-                        <li>VSC</li>
-                    </ul>
-                </section>
-
-                <section class="section" id="code">
-                    <h2>Code</h2>
-                    <pre>
-                        <code>
-                            const userRequest = 'Are you reading this code?';
-                            let testReadTextCode = (arg) => {
-                                let userResponse = confirm(arg);
-                                return alert(userResponse ? 'you are attentive' : 'you are not careful');
-                            }
-                            testReadTextCode(userRequest);
-                        </code> 
-                    </pre>
-                </section>
-
-                <section class="section" id="courses">
-                    <h2>courses</h2>
-                    <p>
-                        this should be table with my courses
-                    </p>
-                </section>
-
-                <section class="section" id="projects">
-                    <h2>projects</h2>
-                    <p>
-                        this should be table with my projects
-                    </p>
-                </section>
-
-                <section class="section" id="education">
-                    <h2>education</h2>
-                    <p>
-                        this should be table with my education
-                    </p>
-                </section>
-
-                <section class="section" id="languages">
-                    <h2>languages</h2>
-                    <p>
-                        this should be table with my languages append native russian
-                    </p>
-                </section>
-
-
-            </div> -->
-
 
         </main>
 
@@ -290,19 +197,6 @@ testReadTextCode(userRequest);
             preloader.classList.add('preloader_hidden')
         })
     </script>
-
-
-    <script>
-        // contacts
-        // summary 
-        // skills 
-        // code 
-        // courses
-        // projects
-        // education
-        // languages 
-    </script>
-
 </body>
 
 </html>
