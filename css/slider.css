@@ -1,0 +1,48 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 400px;
+	padding-top: 40px;
+	/* border: rgb(47, 208, 219) dotted 15px;
+    border-radius: 50%; */
+	text-align: center;
+}
+
+#profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	size: 10px;
+	text-shadow: red 1px 3px;
+
+}
+
+#profile .avatar img {
+	border: 3px solid;
+	height: 200px;
+	border-radius: 50%;
+	position: relative;
+	transition: 0.5s;
+	box-shadow: 0 0 5px 5px rgb(54, 219, 248);
+}
+
+#profile .avatar :hover {
+	height: 300px;
+	border: 3px solid white;
+	box-shadow: 0 0 10px 10px rgb(54, 219, 248);
+}
+
+#profile .profession {
+	transition: 0.7s;
+	padding: 10px;
+}
+
+#profile :hover {
+	letter-spacing: 10px;
+	color: aqua;
+	cursor: pointer;
+}
